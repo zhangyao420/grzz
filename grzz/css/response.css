@@ -1,0 +1,236 @@
+/*固定宽度的容器*/
+	*{
+		box-sizing:border-box;
+	}
+	.container{
+		padding-left:15px!important;
+		padding-right:15px!important;
+		display: block;
+		height: auto;
+		margin-left: auto!important;
+		margin-right: auto!important;
+
+	}
+/*100%宽度的容器*/
+    .container-fluid{
+    	padding:0 15px!important;
+		display: block;
+		height: auto;
+		margin-left: auto!important;
+		margin-right: auto!important;
+    }
+/*行*/
+	.row{
+		margin-left: -15px!important;
+		margin-right: -15px!important;
+		display: block;
+		height: auto;
+	}
+	.row:after{
+		content: "";
+		display: block;
+		height: 0;
+		line-height: 0;
+		clear:both;
+	}
+	.row [class*=col-]{
+		display: block;
+		padding-left: 15px;
+		padding-right: 15px;
+		float: left;
+	}
+	.row .col-xs-1{
+		width: 8.33333333%;
+	}
+	.row .col-xs-2{
+		width: 16.66666667%;
+	}
+	.row .col-xs-3{
+		width: 25%;
+	}
+	.row .col-xs-4{
+		width: 33.33333333%;
+	}
+	.row .col-xs-5{
+		width: 41.66666667%;
+	}
+	.row .col-xs-6{
+		width: 50%;
+	}
+	.row .col-xs-7{
+		width: 58.33333333%;
+	}
+	.row .col-xs-8{
+		width: 66.66666667%;
+	}
+	.row .col-xs-9{
+		width: 75%;
+	}
+	.row .col-xs-10{
+		width: 83.3333333%;
+	}
+	.row .col-xs-11{
+		width: 91.66666667%;
+	}
+	.row .col-xs-12{
+		width: 100%;
+	}
+	@media screen and (min-width: 768px){
+		.hidden-xs{
+			display:none!important;
+		}
+	}
+	@media screen and (min-width: 768px){
+		.container{
+			width: 738px;
+		}
+		.row .col-ms-1{
+			width: 8.33333333%;
+		}
+		.row .col-ms-2{
+			width: 16.66666667%;
+		}
+		.row .col-ms-3{
+			width: 25%;
+		}
+		.row .col-ms-4{
+			width: 33.33333333%;
+		}
+		.row .col-ms-5{
+			width: 41.66666667%;
+		}
+		.row .col-ms-6{
+			width: 50%;
+		}
+		.row .col-ms-7{
+			width: 58.33333333%;
+		}
+		.row .col-ms-8{
+			width: 66.66666667%;
+		}
+		.row .col-ms-9{
+			width: 75%;
+		}
+		.row .col-ms-10{
+			width: 83.3333333%;
+		}
+		.row .col-ms-11{
+			width: 91.66666667%;
+		}
+		.row .col-ms-12{
+			width: 100%;
+		}
+	}
+	@media screen and (min-width: 768px) and (max-width: 1024px){
+		.hidden-ms{
+			display: none!important;
+		}
+	}
+	@media screen and (min-width: 1024px){
+		.container{
+			width: 994px;
+		}
+		.row .col-md-1{
+			width: 8.33333333%;
+		}
+		.row .col-md-2{
+			width: 16.66666667%;
+		}
+		.row .col-md-3{
+			width: 25%;
+		}
+		.row .col-md-4{
+			width: 33.33333333%;
+		}
+		.row .col-md-5{
+			width: 41.66666667%;
+		}
+		.row .col-md-6{
+			width: 50%;
+		}
+		.row .col-md-7{
+			width: 58.33333333%;
+		}
+		.row .col-md-8{
+			width: 66.66666667%;
+		}
+		.row .col-md-9{
+			width: 75%;
+		}
+		.row .col-md-10{
+			width: 83.3333333%;
+		}
+		.row .col-md-11{
+			width: 91.66666667%;
+		}
+		.row .col-md-12{
+			width: 100%;
+		}
+	}
+	@media screen and (min-width: 1024px) and (max-width: 1200px){
+		.hidden-md{
+			display: none!important;
+		}
+	}
+	@media screen and (min-width: 1200px){
+		.container{
+			width: 1170px;
+		}
+		.row .col-lg-1{
+			width: 8.33333333%;
+		}
+		.row .col-lg-2{
+			width: 16.66666667%;
+		}
+		.row .col-lg-3{
+			width: 25%;
+		}
+		.row .col-lg-4{
+			width: 33.33333333%;
+		}
+		.row .col-lg-5{
+			width: 41.66666667%;
+		}
+		.row .col-lg-6{
+			width: 50%;
+		}
+		.row .col-lg-7{
+			width: 58.33333333%;
+		}
+		.row .col-lg-8{
+			width: 66.66666667%;
+		}
+		.row .col-lg-9{
+			width: 75%;
+		}
+		.row .col-lg-10{
+			width: 83.3333333%;
+		}
+		.row .col-lg-11{
+			width: 91.66666667%;
+		}
+		.row .col-lg-12{
+			width: 100%;
+		}
+		.hidden-lg{
+			display: none!important;
+		}
+	}
+/*图片响应*/
+.img-response{
+	max-width: 100%;
+}
+.center-block{
+	margin-left: auto;
+	margin-right: auto;
+}
+.text-center-block{
+	text-align: center;
+}
+.clf:after{
+	content: "";
+	line-height:0;
+	height: 0;
+	display: block;
+	clear:both;
+}
